@@ -4,9 +4,9 @@ Moon market is for those who want to buy land in the moon.
 
 To Clone or Contribute 
 
-https://github.com/iPrayag/MoonMarket.git
+`git clone https://github.com/iPrayag/MoonMarket.git`
 
-cd MoonMarket
+`cd MoonMarket`
 
-mvn jetty:run
+`mvn jetty:run`
 
