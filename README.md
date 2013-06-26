@@ -2,11 +2,17 @@
 
 Moon market is for those who want to buy land in the moon. 
 
-To Clone or Contribute 
+<b>To Clone or Contribute </b>
 
-`git clone https://github.com/iPrayag/MoonMarket.git`
+`$ git clone https://github.com/iPrayag/MoonMarket.git`
 
-`cd MoonMarket`
+`$ cd MoonMarket`
 
-`mvn jetty:run`
+<b>install dependencies</b>
+
+`$ mvn install`
+
+<b>run app</b>
+
+`$ mvn jetty:run`
 
