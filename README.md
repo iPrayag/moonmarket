@@ -10,7 +10,16 @@ Moon market is for those who want to buy land in the moon.
 
 <b>install dependencies</b>
 
-`$ mvn install`
+`$ mvn install -e`
+
+<b>create database</b>
+
+`mysql> create schema Gwitter`
+
+<b></b> vi db properties
+
+`vi src/main/resources/props/default.props`
+
 
 <b>run app</b>
 
