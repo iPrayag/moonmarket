@@ -1,6 +1,6 @@
 # Properties in this file will be read when running in dev mode
 db.dialect=org.hibernate.dialect.MySQL5Dialect
 db.driver=com.mysql.jdbc.Driver
-db.url=jdbc:mysql://10.13.212.4/Gwitter
-db.user=esewa
-db.password=esewa
+db.url=jdbc:localhost/Gwitter
+db.user=root
+db.password=mysql55
