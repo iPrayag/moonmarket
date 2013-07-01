@@ -19,7 +19,7 @@ import _root_.com.zam.gwitter.model._
 class Boot {
   def boot {
     if (!DB.jndiJdbcConnAvailable_?) {
-      println("jndiJdbcConnAvailable_ : " + jndiJdbcConnAvailable_);
+      //println("jndiJdbcConnAvailable_ : " + jndiJdbcConnAvailable_);
       val vendor = 
 	new StandardDBVendor(Props.get("db.driver") openOr "org.h2.Driver",
 			     Props.get("db.url")     openOr  "jdbc:h2:lift_proto.db;AUTO_SERVER=TRUE",
