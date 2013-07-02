@@ -38,5 +38,7 @@ or run at desired port [Reference : Lift default port](https://groups.google.com
 
 
 MORE AT A BLOG
+
 1- [Hacking Liftweb with mvn](http://prayag-waves.blogspot.com/2012/10/getting-started-with-liftweb-framework.html)
+
 2- [Connecting Liftweb to MySQL](http://prayag-waves.blogspot.com/2012/10/connecting-liftweb-to-mysql.html)
