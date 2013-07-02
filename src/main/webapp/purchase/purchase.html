@@ -1,0 +1,23 @@
+<lift:surround with="default" at="content">
+
+    <div>
+        <label>Square feet</label>
+        <input name="squareFeet"/>
+    </div>
+    <div>
+        <label>Amount</label>
+        <input name="amount" readonly="readonly"/>
+    </div>
+    <form action="https://esewa.com.np/epay/main" method="POST" id="epay">
+        <input value="" name="tAmt"  type="hidden"  id="tAmt"/>
+	<input value="" name="amt"   type="hidden" id="amt"/>
+	<input value="0" name="txAmt" type="hidden"  id="txAmt"/>
+	<input value="0" name="psc"   type="hidden"/>
+	<input value="0" name="pdc"   type="hidden"/>
+	<input value="BI000AY" name="scd"   type="hidden"/>
+	<input value="" name="pid"   id="pid" type="hidden"/>
+	<input value="localhost:8888/success" type="hidden" name="su"/>
+	<input value="localhost:8888/failure" type="hidden" name="fu"/>
+ 	<input class="btn btn-primary" id="pay"    name="pay" type="submit" value="Purchase via eSewa"/>
+    </form>
+</lift:surround>
