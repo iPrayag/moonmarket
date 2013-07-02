@@ -40,11 +40,11 @@ class Boot {
     def sitemap() = SiteMap(
       Menu("Home") / "index" >> User.AddUserMenusAfter, // Simple menu form
       // Menu with special Link
-      Menu(Loc("Static", 
-               Link(List("static"), 
+      Menu(Loc("What's Lunar Market", 
+               Link(List("about"), 
                true, 
-               "/static/index"), 
-	       "Static Content")
+               "/about/index"), 
+	       "About Lunar Market")
 	       )
 	   )
 
@@ -67,7 +67,9 @@ class Boot {
     LiftRules.loggedInTest = Full(() => User.loggedIn_?)
 
     S.addAround(DB.buildLoanWrapper)
-  }
+
+   Logger.setup = Empty
+  }//end of boot
 
   /**
    * Force the request to be UTF-8
