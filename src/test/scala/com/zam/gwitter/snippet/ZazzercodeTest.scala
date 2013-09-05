@@ -14,10 +14,10 @@ import Helpers._
 import lib._
 
 
-class HelloWorldTestSpecsAsTest extends JUnit3(HelloWorldTestSpecs)
-object HelloWorldTestSpecsRunner extends ConsoleRunner(HelloWorldTestSpecs)
+class ZazzercodeTestSpecsAsTest extends JUnit3(ZazzercodeTestSpecs)
+object ZazzercodeTestSpecsRunner extends ConsoleRunner(ZazzercodeTestSpecs)
 
-object HelloWorldTestSpecs extends Specification {
+object ZazzercodeTestSpecs extends Specification {
   val session = new LiftSession("", randomString(20), Empty)
   val stableTime = now
 
@@ -29,9 +29,9 @@ object HelloWorldTestSpecs extends Specification {
     }
   }
 
-  "HelloWorld Snippet" should {
+  "Zazzercode Snippet" should {
     "Put the time in the node" in {
-      val hello = new HelloWorld
+      val hello = new Zazzercode
       Thread.sleep(1000) // make sure the time changes
 
       val str = hello.howdy(<span>Hello at <span id="time">Foo</span></span>).toString
