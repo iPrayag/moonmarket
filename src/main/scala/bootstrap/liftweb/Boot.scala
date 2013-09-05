@@ -10,7 +10,7 @@ import Helpers._
 import _root_.net.liftweb.mapper.{DB, ConnectionManager, Schemifier, DefaultConnectionIdentifier, StandardDBVendor,ConnectionIdentifier}
 import _root_.java.sql.{Connection, DriverManager}
 import _root_.com.zam.gwitter.model._
-
+import zazzercode._
 
 /**
  * A class that's instantiated early and run.  It allows the application
@@ -67,6 +67,12 @@ class Boot {
     LiftRules.early.append(makeUtf8)
 
     LiftRules.loggedInTest = Full(() => User.loggedIn_?)
+
+    /*
+     * hook RestController
+     */
+    LiftRules.dispatch.append(RestController) // stateful — associated with a servlet container session
+    LiftRules.statelessDispatchTable.append(RestController) // stateless — no session created
 
     S.addAround(DB.buildLoanWrapper)
 
