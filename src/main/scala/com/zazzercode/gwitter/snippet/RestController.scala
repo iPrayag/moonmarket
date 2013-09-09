@@ -16,9 +16,10 @@ object RestController extends RestHelper {
    * Serve the URL 
    * "/api/validate"
    * add a *.xml or *.json (depending in what you have implemented) at the end of the URL 
-   * eg http://localhost:8080/XXX/api/validate/call.json
+   * eg http://localhost:8080/XXX/api/validate/call.xml
    */
  serve { 
+   // case Post("api" :: "validate" :: Nil, req) =>
    case XmlGet("api" :: "validate" :: _, _) => <xrsi:mobile-pickup-validation-reply xsi:schemaLocation='http://www.westernunion.com/schema/xrsi ../schema/xrsi/XRSISchema.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xrsi='http://www.westernunion.com/schema/xrsi'>
     <mobile_partner>
         <id>NABILNPT</id>
