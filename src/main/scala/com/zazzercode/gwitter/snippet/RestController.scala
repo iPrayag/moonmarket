@@ -52,7 +52,7 @@ object RestController extends RestHelper {
     <mobile_receiver>
         <name>
             <first_name>PRAYAG</first_name>
-            <last_name>UPADHYAY</last_name>
+            <last_name>UPD</last_name>
         </name>
         <address>
             <addr_line1>KATHMANDU</addr_line1>
@@ -108,10 +108,10 @@ object RestController extends RestHelper {
             <country_iso_code>NP</country_iso_code>
         </destination>
     </payment_details>
-    <transaction_id>1320687773513052</transaction_id>
+    <transaction_id>1320687773513051</transaction_id>
     <money_transfer_control>
         <date>2013-07-25-04:00</date>
-        <mtcn>7773513052</mtcn>
+        <mtcn>7773513051</mtcn>
     </money_transfer_control>
     <pickup_reference_number>217808896</pickup_reference_number>
     <transaction_digest>A8177092009B7BF2C5DE1629E3D3685F2587EA60</transaction_digest>
