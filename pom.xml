@@ -12,7 +12,8 @@
   <name>gwitter Project</name>
   <inceptionYear>2010</inceptionYear>
   <properties>
-    <scala.version>2.9.1</scala.version>
+	  <scala.version>2.9.1</scala.version>
+	  <org.elasticsearch.version>0.90.2</org.elasticsearch.version>
     <!-- Common plugin settings -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>${project.build.sourceEncoding}</project.reporting.outputEncoding>
@@ -98,6 +99,12 @@
 	    <version>5.1.17</version>
 	    <type>jar</type>
     </dependency>
+
+            <dependency>
+		                <groupId>org.elasticsearch</groupId>
+			        <artifactId>elasticsearch</artifactId>
+  			        <version>${org.elasticsearch.version}</version>
+  	   </dependency>
   </dependencies>
 
   <build>
