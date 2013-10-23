@@ -17,7 +17,13 @@ import zazzercode._
  * to modify lift's environment
  */
 class Boot {
+  def startElasticsearch(){
+    ElasticBulkload
+  }
+
   def boot {
+    startElasticsearch()
+
     if (!DB.jndiJdbcConnAvailable_?) {
       //println("jndiJdbcConnAvailable_ : " + DB.jndiJdbcConnAvailable_);
       val vendor = 
