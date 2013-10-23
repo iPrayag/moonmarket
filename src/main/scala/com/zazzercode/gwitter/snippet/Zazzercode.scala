@@ -1,4 +1,4 @@
-package com.zam.gwitter {
+package com.zazzercode.gwitter {
 package snippet {
 
 import _root_.scala.xml.{NodeSeq, Text}

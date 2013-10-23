@@ -1,11 +1,13 @@
 package zazzercode
- 
+
+import net.liftweb.common.{Loggable}
 import org.elasticsearch.node.NodeBuilder.nodeBuilder
 import scala.io.Source
+
 /**
   * curl -XGET http://localhost:9200/logs/log/1
   */ 
-object ElasticBulkload extends App {
+object ElasticBulkload extends App with Loggable {
   val node = nodeBuilder().client(true).node()
   val client = node.client()
  

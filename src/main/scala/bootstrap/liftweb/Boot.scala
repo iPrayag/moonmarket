@@ -33,7 +33,7 @@ class Boot {
     }
 
     // where to search snippet
-    LiftRules.addToPackages("com.zam.gwitter")
+    LiftRules.addToPackages("com.zazzercode.gwitter")
     Schemifier.schemify(true, Schemifier.infoF _, User)
 
     // Build SiteMap
