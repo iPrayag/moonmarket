@@ -44,6 +44,11 @@ class Boot {
                 List("purchase", "purchase"),
                "Purchase")
               ),
+     Menu(Loc("Request", 
+             List("jsontable", "jsontable"), 
+             "Request")
+         ),
+
       Menu(Loc("What's Lunar Market", 
                Link(List("about"), true, "/about/index"), 
 	       "About Lunar Market")
