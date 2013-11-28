@@ -1,3 +1,5 @@
+package com.zazzercode.gwitter
+
 import net.liftweb.http.S
 
 class Success {
@@ -5,3 +7,4 @@ class Success {
   println(amount)
   //def render = "#amount" #> "amount"
 }
+

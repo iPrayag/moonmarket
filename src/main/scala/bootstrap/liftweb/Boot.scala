@@ -17,7 +17,13 @@ import zazzercode._
  * to modify lift's environment
  */
 class Boot {
+  def startElasticsearch(){
+    ElasticBulkload
+  }
+
   def boot {
+    startElasticsearch()
+
     if (!DB.jndiJdbcConnAvailable_?) {
       //println("jndiJdbcConnAvailable_ : " + DB.jndiJdbcConnAvailable_);
       val vendor = 
@@ -33,7 +39,7 @@ class Boot {
     }
 
     // where to search snippet
-    LiftRules.addToPackages("com.zam.gwitter")
+    LiftRules.addToPackages("com.zazzercode.gwitter")
     Schemifier.schemify(true, Schemifier.infoF _, User)
 
     // Build SiteMap

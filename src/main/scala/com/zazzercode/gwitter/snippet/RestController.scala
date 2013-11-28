@@ -1,4 +1,4 @@
-package zazzercode
+package com.zazzercode.gwitter
 
 import net.liftweb._
 import common._
