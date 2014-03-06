@@ -1,14 +1,17 @@
-<b>Moon Market</b>
+Moon Market
+------------
 
 Moon market is for those who want to buy land in the moon. 
 
 <b>To Clone or Contribute </b>
 
-`$ git clone https://github.com/iPrayag/MoonMarket.git`
+```
+$ git clone https://github.com/iPrayag/MoonMarket.git
+$ cd MoonMarket
+```
 
-`$ cd MoonMarket`
-
-<b>install dependencies</b>
+install dependencies
+------------------------
 
 `$ mvn install -e`
 
@@ -18,7 +21,9 @@ The dependencies are
 
 `lift-mapper_2.9.1`
 
-<b>create database</b>
+
+create database
+-------------------
 
 `mysql> create schema Gwitter`
 
@@ -27,7 +32,8 @@ The dependencies are
 `vi src/main/resources/props/default.props`
 
 
-<b>run app at default port 8080</b>
+run app
+------------------------------------
 
 `$ mvn jetty:run`
 
@@ -37,7 +43,7 @@ or run at desired port [Reference : Lift default port](https://groups.google.com
 
 
 
-MORE AT A BLOG
+<b>MORE AT A BLOG</b>
 
 1- [Hacking Liftweb with mvn](http://prayag-waves.blogspot.com/2012/10/getting-started-with-liftweb-framework.html)
 
